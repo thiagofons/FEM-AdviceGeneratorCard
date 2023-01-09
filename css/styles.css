@@ -35,7 +35,6 @@ body {
   border-radius: 1rem;
   text-align: center;
   max-width: 40rem;
-  
 }
 .container h1 {
   color: var(--neon-green);
@@ -47,7 +46,6 @@ body {
   margin: 2rem 0;
   color: var(--light-cyan);
   font-size: 28px;
-
 }
 
 .divide svg {
@@ -55,7 +53,6 @@ body {
   margin: 2rem auto;
 }
 .dice {
-  
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -65,10 +62,7 @@ body {
   background-color: var(--neon-green);
   position: absolute;
   bottom: -2rem;
-  left: calc(50% - 2rem)
-  
-  
-  
+  left: calc(50% - 2rem);
 }
 .dice svg {
   display: block;
@@ -76,8 +70,14 @@ body {
 .dice:hover {
   cursor: pointer;
   box-shadow: 0 0 1rem var(--neon-green);
+  animation: rollDice .5s;
 }
 
-@media screen and (min-width: 376px) {
-
+@keyframes rollDice {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }

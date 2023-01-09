@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  /* primary */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  /* neutral */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+.container {
+  background-color: var(--dark-grayish-blue);
+  position: relative;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 40rem;
+  
+}
+.container h1 {
+  color: var(--neon-green);
+  font-size: 0.75rem;
+  letter-spacing: 0.3rem;
+}
+
+.content p {
+  margin: 2rem 0;
+  color: var(--light-cyan);
+  font-size: 28px;
+
+}
+
+.divide svg {
+  display: block;
+  margin: 2rem auto;
+}
+.dice {
+  
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  position: absolute;
+  bottom: -2rem;
+  left: calc(50% - 2rem)
+  
+  
+  
+}
+.dice svg {
+  display: block;
+}
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--neon-green);
+}
+
+@media screen and (min-width: 376px) {
+
+}
